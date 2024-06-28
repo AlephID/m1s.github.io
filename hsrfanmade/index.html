@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let p = "hello";
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            };
+            let unitname;
+            let weakness;
+            let health;
+            let effects;
+            
+            function onload(){
+                document.getElementById("bossname").innerHTML = "Wanderer of Time: Misaki";
+            }
+        </script>
+        <style>
+            #boss {
+                border: 1px solid black;
+            }
+            #bossname {
+                font-family: arial;
+                margin-block: 0;
+                margin-inline: 0;
+                text-align: center;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body onload="onload()">
+        <div id="enemy">
+            <div id="boss">
+                <h1 id="bossname"></h1>
+                <div class="weakness" id="bosswn"></div>
+                <div class="health" id="bosshp"></div>
+                <select name="bosseffect" class="effect"></select>
+            </div>
+        </div>
+    </body>  
+</html>
